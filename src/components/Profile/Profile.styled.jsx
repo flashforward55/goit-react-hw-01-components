@@ -19,7 +19,7 @@ export const UserAvatar = styled.img`
   width: 150px;
 
   border-radius: 50%;
-  background-color: #E7ECF2;
+  background-color: #F3F6F9;
 `;
 
 export const UserName = styled.p`
@@ -54,7 +54,7 @@ export const StatsItem = styled.li`
   padding: 15px 0;
   width: calc(100% / 3);
 
-  background-color: #E7ECF2;
+  background-color: #F3F6F9;
 
   :first-of-type {
     border-radius: 0 0 0 4px;

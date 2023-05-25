@@ -37,7 +37,8 @@ export const UploadStatsItem = styled.li`
   padding: 8px 0;
   width: calc(100% / 5);
 
-  background-color: ${props => props.backgroundColor}; /* Добавляем свойство backgroundColor */
+  background-color: ${props =>
+    props.randomColor}; /* Добавляем свойство randomColor */
 
   :first-of-type {
     border-radius: 0 0 0 4px;

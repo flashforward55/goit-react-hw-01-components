@@ -9,7 +9,6 @@ import {
 } from './Statistics.styled';
 import { randomColor } from './RandomColor';
 
-
 export const Statistics = ({ title, stats }) => {
   return (
     <UploadStatsSection>
@@ -17,7 +16,7 @@ export const Statistics = ({ title, stats }) => {
 
       <UploadStatsList>
         {stats.map(({ id, label, percentage }) => (
-          <UploadStatsItem key={id} backgroundColor={randomColor()}>
+          <UploadStatsItem key={id} randomColor={randomColor()}>
             <StatsLabel>{label}</StatsLabel>
             <StatsPercentage>{percentage}%</StatsPercentage>
           </UploadStatsItem>

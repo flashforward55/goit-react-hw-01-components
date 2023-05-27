@@ -5,9 +5,6 @@ export const UploadStatsSection = styled.section`
 `;
 
 export const SectionTitle = styled.h2`
-  margin-bottom: 15px;
-  width: 320px;
-  margin: 0 auto;
   padding: 15px 0;
 
   border-radius: 4px 4px 0 0;

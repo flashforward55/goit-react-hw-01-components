@@ -12,6 +12,8 @@ import {
   StatsQuantity,
 } from './Profile.styled';
 
+import { capitalizeFirstLetter } from './CapitalizeFirstLetter';
+
 export const Profile = ({
   username,
   tag,
@@ -19,6 +21,8 @@ export const Profile = ({
   avatar,
   stats: { followers, views, likes },
 }) => {
+  const keys = Object.keys({ followers, views, likes });
+
   return (
     <Card>
       <DescriptionWrap>
@@ -29,20 +33,20 @@ export const Profile = ({
       </DescriptionWrap>
 
       <StatsList>
-        <StatsItem>
-          <StatsLabel>Followers</StatsLabel>
+        <StatsItem key={keys[0]}>
+          <StatsLabel>{capitalizeFirstLetter(keys[0])}</StatsLabel>
           <StatsQuantity>
             {followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </StatsQuantity>
         </StatsItem>
-        <StatsItem>
-          <StatsLabel>Views</StatsLabel>
+        <StatsItem key={keys[1]}>
+          <StatsLabel>{capitalizeFirstLetter(keys[1])}</StatsLabel>
           <StatsQuantity>
             {views.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </StatsQuantity>
         </StatsItem>
-        <StatsItem>
-          <StatsLabel>Likes</StatsLabel>
+        <StatsItem key={keys[2]}>
+          <StatsLabel>{capitalizeFirstLetter(keys[2])}</StatsLabel>
           <StatsQuantity>
             {likes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
           </StatsQuantity>

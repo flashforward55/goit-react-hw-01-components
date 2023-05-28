@@ -16,7 +16,7 @@ export const Statistics = ({ title, stats }) => {
 
       <UploadStatsList>
         {stats.map(({ id, label, percentage }) => (
-          <UploadStatsItem key={id} randomBackgroundColor={randomColor()}>
+          <UploadStatsItem key={id} randomBC={randomColor()}>
             <StatsLabel>{label}</StatsLabel>
             <StatsPercentage>{percentage}%</StatsPercentage>
           </UploadStatsItem>

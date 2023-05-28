@@ -34,8 +34,8 @@ export const UploadStatsItem = styled.li`
   padding: 8px 0;
   width: calc(100% / 5);
 
-  background-color: ${({ randomBackgroundColor }) =>
-    randomBackgroundColor}; /* Добавляем свойство randomBackgroundColor  */
+  background-color: ${({ randomBC }) =>
+    randomBC}; /* Добавляем свойство randomBC */
 
   :first-of-type {
     border-radius: 0 0 0 4px;

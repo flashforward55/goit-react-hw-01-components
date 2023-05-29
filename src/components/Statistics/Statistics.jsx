@@ -12,7 +12,7 @@ import { randomColor } from './RandomColor';
 export const Statistics = ({ title, stats }) => {
   return (
     <UploadStatsSection>
-      {title ? <SectionTitle>{title}</SectionTitle> : null}
+      {title && <SectionTitle>{title}</SectionTitle>}
 
       <UploadStatsList>
         {stats.map(({ id, label, percentage }) => (
